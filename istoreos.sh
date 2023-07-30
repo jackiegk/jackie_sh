@@ -19,6 +19,12 @@ opkg install luci-app-passwall --force-overwrite --force-maintainer \
 #安装openclash
 opkg install luci-app-openclash --force-overwrite --force-maintainer  \
 
+#安装NPS客户端
+opkg install luci-app-nps --force-overwrite --force-maintainer  \
+
+#安装zerotier
+opkg luci-app-zerotier  --force-overwrite --force-maintainer  \
+
 
 #清除缓存
 rm -rf /tmp/luci-indexcache* /tmp/luci-modulecache/* && \
@@ -26,5 +32,5 @@ rm -rf /tmp/luci-indexcache* /tmp/luci-modulecache/* && \
 clear
 echo -n -e "${Font_Green}安装成功，5秒后重启${Font_Suffix}"
 sleep 5
-rm kop.sh -rf
+rm istoreos.sh -rf
 reboot
