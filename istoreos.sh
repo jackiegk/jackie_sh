@@ -29,6 +29,7 @@ opkg luci-app-zerotier  --force-overwrite --force-maintainer
 #清除缓存
 rm -rf /tmp/luci-indexcache* /tmp/luci-modulecache/* && 
 
+exit
 clear
 echo -n -e "${Font_Green}安装成功，5秒后重启${Font_Suffix}"
 sleep 5
