@@ -5,7 +5,7 @@ Font_Green="\033[32m";
 Font_Suffix="\033[0m";
 
 #更换安装源
-echo -e "src/gz kiddin9 https://op.supes.top/packages/x86_64/" | tee -a /etc/opkg/distfeeds.conf && 
+echo -e "src/gz kiddin9 https://dl.openwrt.ai/packages-23.05/x86_64/" | tee -a /etc/opkg/distfeeds.conf && 
 sed -i 's/^option check_signature/#&/' /etc/opkg.conf && 
 opkg update && 
 
@@ -25,6 +25,8 @@ opkg install luci-app-nps --force-overwrite --force-maintainer
 #安装zerotier
 opkg luci-app-zerotier  --force-overwrite --force-maintainer  
 
+安装adguardhome
+opkg install luci-app-adguardhome --force-overwrite --force-maintainer 
 
 #清除缓存
 rm -rf /tmp/luci-indexcache* /tmp/luci-modulecache/* && 
