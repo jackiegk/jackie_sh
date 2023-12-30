@@ -3,7 +3,7 @@
 Font_Red="\033[31m";
 Font_Green="\033[32m";
 Font_Suffix="\033[0m";
-
+#test
 #更换安装源
 echo -e "src/gz kiddin9 https://dl.openwrt.ai/packages-23.05/x86_64/" | tee -a /etc/opkg/distfeeds.conf && 
 sed -i 's/^option check_signature/#&/' /etc/opkg.conf && 
