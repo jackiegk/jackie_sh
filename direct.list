@@ -2,5 +2,6 @@ DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,steampy.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,gushiwen.cn
+DOMAIN-SUFFIX,jellyfin.asia
 IP-CIDR,111.230.238.214/32,no-resolve
 IP-CIDR,139.199.1.142/32,no-resolve
